@@ -15,6 +15,7 @@ public class MyGlideModule implements GlideModule {
     public void applyOptions(Context context, GlideBuilder builder) {
         builder.setDiskCache(
                 new InternalCacheDiskCacheFactory(context, "pic_cache", 20 * 1024 * 1024));
+
     }
 
     @Override
